@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mtgat-asd-eeg"
+version = "0.1.0"
+description = "Graph-attention utilities for EEG-based ASD research"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "pandas", "scikit-learn", "matplotlib", "PyYAML", "mne", "torch"]
+
+[tool.setuptools.packages.find]
+include = ["mtgat*"]

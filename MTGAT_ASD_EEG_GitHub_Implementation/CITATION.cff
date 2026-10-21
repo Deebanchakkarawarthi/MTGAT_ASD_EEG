@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and repository."
+title: "MT-GAT for EEG-Based ASD Analysis"
+version: 0.1.0
+date-released: 2026-10-21
+license: MIT

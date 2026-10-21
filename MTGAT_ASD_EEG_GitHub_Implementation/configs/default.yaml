@@ -1,0 +1,25 @@
+data:
+  bids_root: data/raw
+  output_dir: outputs/features
+preprocessing:
+  l_freq: 1.0
+  h_freq: 45.0
+  target_sfreq: 256
+  epoch_seconds: 2.0
+  epoch_overlap: 0.0
+features:
+  bands:
+    delta: [1.0, 4.0]
+    theta: [4.0, 8.0]
+    alpha: [8.0, 13.0]
+    beta: [13.0, 30.0]
+    gamma: [30.0, 45.0]
+training:
+  seed: 42
+  batch_size: 16
+  learning_rate: 0.001
+  epochs: 50
+  patience: 8
+  num_classes: 2
+  hidden_dim: 64
+  dropout: 0.3
